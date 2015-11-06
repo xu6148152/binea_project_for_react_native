@@ -1,1 +1,1 @@
-# DEMO for react_native
+# demo for react_native
