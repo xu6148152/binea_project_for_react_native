@@ -14,7 +14,8 @@ var styles = React.StyleSheet.create({
 
 class HelloReactNative extends React.Component {
   render() {
-    return React.createElement(React.Text, {style: styles.text}, "Hello World");
+    // return React.createElement(React.Text, {style: styles.text}, "Hello World");
+    return <React.Text style={styles.text}>Hello World</React.Text>;
   }
 }
 
