@@ -5,6 +5,7 @@
 'use strict';
 
 var React = require('react-native');
+var SearchPage = require('./searchPage')
 var {
   AppRegistry,
   StyleSheet,
@@ -35,13 +36,15 @@ class HelloWorld extends React.Component {
 
 class PropertyFinderApp extends React.Component {
   render() {
-    return <React.NavigatorIOS
+    return (
+      <React.NavigatorIOS
       style={styles.container}
       initialRoute={{
         title: 'PropertyFinder',
-        component: HelloWorld,
+        component: SearchPage
       }} />
-  };
+    );
+  }
 }
 
 AppRegistry.registerComponent('PropertyFinderApp', () => PropertyFinderApp);
