@@ -17,6 +17,8 @@ var {
   BackAndroid,
 } = React;
 
+var MyToastAndroid = require('./MyToastAndroid');
+
 var _navigator;
 
 BackAndroid.addEventListener('hardwareBackPress', () => {
@@ -27,7 +29,8 @@ BackAndroid.addEventListener('hardwareBackPress', () => {
 var RNDemo = React.createClass({
 
   _onPress: function() {
-    return _navigator.push({title: 'jump', id: 'jump'});
+    // return _navigator.push({title: 'jump', id: 'jump'});
+    return MyToastAndroid.show("MyToastAndroid", MyToastAndroid.SHORT);
   },
 
   renderSceneAndroid: function(route, navigator) {
